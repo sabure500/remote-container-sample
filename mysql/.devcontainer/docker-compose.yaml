@@ -1,0 +1,27 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+      TZ: "Asia/Tokyo"
+    ports:
+      - "3306:3306"
+    volumes: 
+      - ../db/data:/var/lib/mysql
+      - ./my.cnf:/etc/mysql/conf.d/my.cnf
+    networks:
+      - remote-container_common-network
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_ARBITRARY: 1
+    ports:
+      - 3307:80
+    depends_on:
+      - mysql
+    networks:
+      - remote-container_common-network
+networks: 
+  remote-container_common-network:
+    external: true

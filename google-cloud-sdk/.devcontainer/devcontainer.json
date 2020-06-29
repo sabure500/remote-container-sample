@@ -1,0 +1,20 @@
+{
+    "name": "Google Cloud SDK Remote-Container",
+    "build" : {
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/usr/bin/fish",
+    },
+    "extensions": [
+        "alefragnani.bookmarks",
+        "mhutchie.git-graph",
+        "redhat.vscode-yaml",
+        "zainchen.json"
+    ],
+    "mounts": [
+        "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached",
+        "source=${localWorkspaceFolder}/.devcontainer/.local/share/fish/fish_history,target=/root/.local/share/fish/fish_history,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/.config/gcloud/,target=/root/.config/gcloud/,type=bind,consistency=cached",
+    ]
+}
