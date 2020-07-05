@@ -1,0 +1,11 @@
+{
+    "name": "MySQL Remote-Container",
+    "dockerComposeFile": "docker-compose.yaml",
+    "service" : "mysql",
+    "workspaceFolder": "/root",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+    },
+    "extensions": [],
+    "shutdownAction": "stopCompose"
+}

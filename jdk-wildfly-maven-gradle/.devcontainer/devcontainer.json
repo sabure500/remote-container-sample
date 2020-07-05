@@ -1,0 +1,23 @@
+{
+    "name": "JDK&Wildfly&Maven&Gradle Remote-Container",
+    "dockerComposeFile": "docker-compose.yaml",
+    "service" : "jdk-wildfly-maven",
+    "workspaceFolder": "/workspace",
+    "settings": {
+        "terminal.integrated.shell.linux": "/usr/bin/fish",
+        "java.home": "/opt/java/openjdk",
+        "maven.executable.preferMavenWrapper": false,
+        "maven.executable.path": "/opt/maven/bin",
+        "maven.terminal.useJavaHome": true,
+        "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/root/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+    },
+    "extensions": [
+        "alefragnani.bookmarks",
+        "mhutchie.git-graph",
+        "vscjava.vscode-java-pack",
+        "shengchen.vscode-checkstyle",
+        "gabrielbb.vscode-lombok",
+        "naco-siren.gradle-langua"
+    ],
+    "shutdownAction": "stopCompose"
+}
