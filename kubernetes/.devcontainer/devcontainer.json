@@ -14,6 +14,8 @@
     ],
     "mounts": [
         "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached",
-        "source=${localWorkspaceFolder}/.devcontainer/.local/share/fish/fish_history,target=/root/.local/share/fish/fish_history,type=bind,consistency=cached"
+        "source=${localEnv:HOME}/.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached",
+        "source=${localWorkspaceFolder}/.devcontainer/.local/share/fish/fish_history,target=/root/.local/share/fish/fish_history,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/.kube/,target=/root/.kube/,type=bind,consistency=cached",
     ]
 }

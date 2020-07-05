@@ -8,6 +8,7 @@ services:
     command: /bin/sh -c "while sleep 1000; do :; done"
     volumes: 
       - $HOME/.ssh:/root/.ssh
+      - $HOME/.gitconfig:/root/.gitconfig
       - .local/share/fish/fish_history:/root/.local/share/fish/fish_history
       - ..:/workspace
       - ./jboss_home/configuration/standalone.xml:/opt/wildfly/standalone/configuration/standalone.xml
