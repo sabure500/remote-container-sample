@@ -9,8 +9,12 @@
     "extensions": [
         "alefragnani.bookmarks",
         "mhutchie.git-graph",
-        "4ops.terraform",
-        "redhat.vscode-yaml"
+        "coenraads.bracket-pair-colorizer-2",
+        "oderwat.indent-rainbow",
+        "shardulm94.trailing-spaces",
+        "redhat.vscode-yaml",
+        "zainchen.json",
+        "4ops.terraform"
     ],
     "mounts": [
         "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached",
