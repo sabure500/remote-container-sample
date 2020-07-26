@@ -14,6 +14,9 @@
     "extensions": [
         "alefragnani.bookmarks",
         "mhutchie.git-graph",
+        "coenraads.bracket-pair-colorizer-2",
+        "oderwat.indent-rainbow",
+        "shardulm94.trailing-spaces",
         "vscjava.vscode-java-pack",
         "shengchen.vscode-checkstyle",
         "gabrielbb.vscode-lombok",

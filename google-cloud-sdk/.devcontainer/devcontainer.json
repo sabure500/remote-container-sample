@@ -10,7 +10,10 @@
         "alefragnani.bookmarks",
         "mhutchie.git-graph",
         "redhat.vscode-yaml",
-        "zainchen.json"
+        "zainchen.json",
+        "coenraads.bracket-pair-colorizer-2",
+        "oderwat.indent-rainbow",
+        "shardulm94.trailing-spaces"
     ],
     "mounts": [
         "source=${localEnv:HOME}/.ssh/,target=/root/.ssh/,type=bind,consistency=cached",
