@@ -1,0 +1,19 @@
+{
+    "name": "golang Remote-Container",
+    "dockerComposeFile": "docker-compose.yaml",
+    "service" : "golang",
+    "workspaceFolder": "/workspace",
+    "settings": {
+        "terminal.integrated.shell.linux": "/usr/bin/fish",
+        "go.gopath": "/workspace",
+    },
+    "extensions": [
+        "alefragnani.bookmarks",
+        "mhutchie.git-graph",
+        "coenraads.bracket-pair-colorizer-2",
+        "oderwat.indent-rainbow",
+        "shardulm94.trailing-spaces",
+        "golang.go"
+    ],
+    "shutdownAction": "stopCompose"
+}

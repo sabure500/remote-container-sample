@@ -1,0 +1,17 @@
+version: "3"
+services:
+  golang:
+    build: .
+    ports:
+      - "9000:9000"
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    volumes:
+      - $HOME/.ssh:/root/.ssh
+      - $HOME/.gitconfig:/root/.gitconfig
+      - .local/share/fish/fish_history:/root/.local/share/fish/fish_history
+      - ..:/workspace
+    networks:
+      - remote-container_common-network
+networks:
+  remote-container_common-network:
+    external: true
