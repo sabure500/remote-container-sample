@@ -1,0 +1,24 @@
+{
+    "name": "Infra-tools Remote-Container",
+    "build" : {
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/usr/bin/fish",
+    },
+    "extensions": [
+        "alefragnani.bookmarks",
+        "mhutchie.git-graph",
+        "coenraads.bracket-pair-colorizer-2",
+        "oderwat.indent-rainbow",
+        "shardulm94.trailing-spaces",
+        "redhat.vscode-yaml",
+        "zainchen.json",
+        "4ops.terraform"
+    ],
+    "mounts": [
+        "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached",
+        "source=${localWorkspaceFolder}/.devcontainer/.local/share/fish/fish_history,target=/root/.local/share/fish/fish_history,type=bind,consistency=cached",
+    ],
+}
