@@ -1,0 +1,47 @@
+{
+    "name": "Vue.js Remote-Container",
+    "build" : {
+        "dockerfile": "Dockerfile"
+    },
+    "workspaceFolder": "/workspaces",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces,type=bind,consistency=cached",
+    "forwardPorts" : [8080],
+    "settings": {
+        "terminal.integrated.shell.linux": "/usr/bin/fish",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+            "source.organizeImports": true,
+            "source.fixAll": true
+        },
+        "editor.formatOnPaste": false,
+        "editor.formatOnSave": false,
+        // "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnType": true,
+        "eslint.validate": [
+            "javascript",
+            "javascriptreact",
+            "vue",
+            "typescript"
+        ],
+        "vetur.format.defaultFormatter.css": "prettier",
+        "vetur.format.defaultFormatter.scss": "prettier",
+        "vetur.format.defaultFormatter.html": "prettier",
+        "vetur.format.defaultFormatter.js": "prettier-eslint",
+        "vetur.format.defaultFormatter.ts": "vscode-typescript",
+        "vetur.validation.template": false
+    },
+    "extensions": [
+        "alefragnani.bookmarks",
+        "mhutchie.git-graph",
+        "coenraads.bracket-pair-colorizer-2",
+        "oderwat.indent-rainbow",
+        "shardulm94.trailing-spaces",
+        "zainchen.json",
+        "mubaidr.vuejs-extension-pack"
+    ],
+    "mounts": [
+        "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached",
+        "source=${localWorkspaceFolder}/.devcontainer/.local/share/fish/fish_history,target=/root/.local/share/fish/fish_history,type=bind,consistency=cached",
+    ]
+}

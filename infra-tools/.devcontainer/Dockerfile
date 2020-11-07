@@ -7,7 +7,7 @@ COPY .config/fish/config.fish /root/.config/fish/config.fish
 
 
 # ===== terraform =====
-ENV TERRAFORM_VERSION 0.13.4
+ENV TERRAFORM_VERSION 0.13.5
 ENV TFLINT_VERSION 0.17.0
 RUN wget -P /usr/local/bin "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip" \
     && unzip -d /usr/local/bin /usr/local/bin/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
