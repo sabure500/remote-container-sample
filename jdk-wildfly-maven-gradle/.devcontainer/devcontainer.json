@@ -2,7 +2,7 @@
     "name": "JDK&Wildfly&Maven&Gradle Remote-Container",
     "dockerComposeFile": "docker-compose.yaml",
     "service" : "jdk-wildfly-maven",
-    "workspaceFolder": "/workspace",
+    "workspaceFolder": "/workspaces",
     "settings": {
         "terminal.integrated.shell.linux": "/usr/bin/fish",
         "java.home": "/opt/java/openjdk",

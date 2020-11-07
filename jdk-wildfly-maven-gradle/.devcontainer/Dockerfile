@@ -1,7 +1,7 @@
 FROM adoptopenjdk/openjdk11:alpine-slim
 
 # ===== common area =====
-ENV WORKSPACE_DIR "/workspace"
+ENV WORKSPACE_DIR "/workspaces"
 RUN apk add --no-cache fish git openssh curl wget tar unzip\
     && mkdir -p $WORKSPACE_DIR
 COPY .config/fish/config.fish /root/.config/fish/config.fish

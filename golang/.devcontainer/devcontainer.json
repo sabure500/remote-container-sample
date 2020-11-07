@@ -2,7 +2,7 @@
     "name": "golang Remote-Container",
     "dockerComposeFile": "docker-compose.yaml",
     "service" : "golang",
-    "workspaceFolder": "/workspace",
+    "workspaceFolder": "/workspaces",
     "settings": {
         "terminal.integrated.shell.linux": "/usr/bin/fish",
         "go.gopath": "/workspace",
